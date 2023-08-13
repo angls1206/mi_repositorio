@@ -1,0 +1,299 @@
+header nav img {
+    width: 300px;
+  }
+  .logo {
+    width: 300px;
+  }
+
+  .img-inicio {
+    width: 500px;
+    height: 300px;
+  }
+
+  .img-nosotros {
+    width: 450px;
+    height: 300px;
+  }
+
+  .img-icono {
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  
+
+main {
+  color: gainsboro;
+  margin: 0 auto;
+  max-width: 1001px;
+  min-height: 300vh;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px 1fr;
+  grid-template-rows: 150px
+    100px
+    100px
+    800px
+    500px
+    100px
+    100px;
+  grid-template-areas:
+  "my-header my-header my-header my-header"
+  "my-nav my-nav my-nav my-nav"
+  "my-entrada my-entrada my-entrada my-entrada"
+  "my-nosotros my-nosotros my-nosotros my-nosotros"
+  "my-news my-news my-news my-news"
+  "my-menu my-menu my-menu my-menu"
+  "my-footer my-footer my-footer my-footer"
+    
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+    main {
+      grid-template-columns: 200px 1fr 200px 1fr;
+      grid-template-rows: 150px
+      100px
+      250px
+      300px
+      300px
+      600px
+      500px
+      100px
+      100px;
+      grid-template-areas:
+        "my-header my-header my-header my-header"
+        "my-nav my-nav my-nav my-nav"
+        "my-entradaimg my-entradaimg my-entradaimg my-entradaimg"
+        "my-entrada my-entrada my-entrada my-entrada"
+        "my-nosotrosimg my-nosotrosimg my-nosotrosimg my-nosotrosimg"
+        "my-nosotros my-nosotros my-nosotros my-nosotros"
+        "my-news my-news my-news my-news"
+        "my-menu my-menu my-menu my-menu"
+        "my-footer my-footer my-footer my-footer"
+    }
+  }
+@media (min-width: 1001px) {
+    main {
+      grid-template-columns: 200px 1fr 200px 1fr 1fr;
+      grid-template-rows: 150px
+      350px
+      800px
+      500px
+      100px
+      50px;
+      grid-template-areas:
+      "my-header my-header my-nav my-nav my-nav"
+      "my-entrada my-entrada my-entradaimg my-entradaimg my-entradaimg"
+      "my-nosotros my-nosotros my-nosotrosimg  my-nosotrosimg my-nosotrosimg"
+      "my-news my-news my-news my-news my-news"
+      "my-menu my-menu my-menu my-menu my-menu"
+      "my-footer my-footer my-footer my-footer my-footer"
+    }
+  }
+
+  header {
+    grid-area: my-header;
+    background: white
+    width: 100%;
+    z-index: 100;
+  }
+   
+  nav {
+    grid-area: my-nav;
+    background-color: white;
+    float: right;
+    text-align: center;
+  }
+  
+  nav ul {
+      list-style: none;
+      overflow: hidden; 
+    }
+    
+  nav ul li {
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;;
+      font-size: 18px;
+    }
+  
+    nav ul li a {
+      display: block; 
+      padding: 18px;
+      color: #7a163c;
+      text-decoration: none;
+    }
+  
+    nav ul li:hover {
+      background: #f0a2cf;
+    }
+
+  .container {
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+    font-size: 5rem;
+  }
+  
+  .container div {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1rem;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  header nav img {
+    width: 100px;
+  }
+  .logo {
+    width: 300px;
+  }
+
+  section#entrada {
+    grid-area: my-entrada;
+    background-color: white;
+    float:center;
+ }
+
+ section#entradaimg {
+    grid-area: my-entradaimg;
+    background-color: white;
+    float:center;
+ }
+  
+  section#entrada p {
+    color: #bb285c;
+    text-align: left;
+  }
+  section#entrada p span {
+    color: #bb285c;
+  }
+  
+  section#entrada h1 {
+    color: #0844a4;
+  }
+
+  section#news {
+    grid-area: my-news;
+    background-color: white;
+    float:center;
+ }
+
+  section#news p {
+    color: #bb285c;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  section#news h1 {
+    color: #4dd7fa;
+    text-align: center;
+
+  }
+  section#entrada h2 {
+    color: #fff;
+  }
+  section#entrada {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+  }
+  
+  section#nosotrosimg {
+    grid-area: my-nosotrosimg;
+    background-color: #c9f1fd;
+  }
+
+  section#nosotros {
+    grid-area: my-nosotros;
+    background-color: #c9f1fd;
+    color: #bb285c;
+  }
+  
+  section#nosotros h2 {
+    color: white;
+  }
+  section#nosotros h4 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  section#nosotros article {
+    margin-bottom: 25px;
+  }
+
+
+  section#contacto {
+    background-image: url('imagenes/logo.jpg');
+    background-repeat: repeat;
+    background-size: 100px;
+  }
+  
+  section.estilo-seccion {
+    padding: 64px 50px;
+    text-align: center;
+  }
+
+  footer {
+    grid-area: my-footer;
+    background-color: #f2c9fb;
+    color: #00a4d3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 15px;
+  }
+  
+  
+  
+    section#menu {
+      grid-area: my-menu;
+      background-color: #f2c9fb;
+      float:center;
+   }
+    
+    section#menu ul {
+        list-style: none;
+        overflow: hidden; 
+        float: center;
+      }
+      
+      section#menu ul li {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;;
+        font-size: 18px;
+      }
+    
+      section#menu ul li a {
+        display: block; 
+        padding: 18px;
+        color: #00a4d3;
+        text-decoration: none;
+      }
+    
+      section#menu ul li:hover {
+        background: #f0a2cf;
+      }
+  
+  
