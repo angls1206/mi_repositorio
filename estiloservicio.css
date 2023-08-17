@@ -14,7 +14,7 @@ main {
   grid-template-columns: 200px 1fr 200px 1fr;
   grid-template-rows: 150px
     100px
-    1fr
+    350px
     100px
     100px
     200px;
@@ -32,7 +32,7 @@ main {
       grid-template-columns: 200px 1fr 200px 1fr;
       grid-template-rows: 150px
       100px
-      1fr
+      350px
       100px
       100px
       200px;
@@ -95,16 +95,8 @@ nav ul li {
   nav ul li:hover {
     background: #f0a2cf;
   }
-aside {
-  grid-area: my-aside;
-  background-color: darkmagenta;
-}
- 
-section {
-  grid-area: my-section;
-  background-color: indigo;
-}
- 
+
+
 
     
     section#servicios {
