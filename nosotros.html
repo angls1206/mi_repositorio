@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="imagenes/logoT.png">
-    <link rel="stylesheet" href="construccion.css" />
-</head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+            <!--Anigua hoja de estilo--> 
+   <!--link rel="stylesheet" href="construccion.css" /-->
+   <!--SCSS-->
+   <link rel="stylesheet" href="css/otherpages.css">
+
+
+  </head>
 <body>
 <main>
   <header>
@@ -14,21 +20,50 @@
         <img src="imagenes/logoH.jpg" alt="Logo Metras" class="logo" />
       </a>
 </header>
-<nav>      
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">|  Nosotros</a></li>
-        <li><a href="servicios.html">|  Servicios</a></li>
-        <li><a href="contacto.html">|  Contacto</a></li>            
-   </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+ 
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
 </nav>
   <section>SectionC</section>
   <section id="construccion">
-    <img
-      src="imagenes/construccion.jpg"
-      alt="construccion"
-      class="img-construccion"
-    />
+    <section  id="nosotros" class="estilo-seccion">
+      <div class="text-center">
+        <img src="imagenes/nosotros_paginaweb.png" class="img-nosotros" alt="nosotros">
+      </div>
+      <h3>Nosotros</h3>
+                  <p>
+                      Somos una pareja de amigos con muchos años de amistad y crecimiento profesional trabajando
+                      en conjunto y en empresas independiente, que con habilidades complementarias, decidimos hacer nuestro sueño de
+                      apoyar a empresas / negocios / emprendimientos / otros a poder contar con productos y servicios
+                      accesibles y que les permita optimizar sus procesos y operatividad.
+                      <br>
+                      <br>
+                      Nuestros productos y servicios están orientados a brindar herramientas para el crecimiento de nuestros clientes, con el objetivo de ir mejorando en conjunto con el cliente.
+                  </p>
+                  <br>
+              </section>
+
 </section>
 
 
@@ -52,5 +87,6 @@
 
   </footer>
 </main>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

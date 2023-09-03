@@ -1,0 +1,217 @@
+header {
+    grid-area: my-header;
+    background: white;
+    width: 100%;
+    z-index: 100;
+    nav {
+        img {
+            width: 300px;
+          }
+    }  
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: white;
+    float: right;
+    text-align: center;
+    ul {
+        list-style: none;
+        overflow: hidden; 
+        li {
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;;
+            font-size: 18px;
+            a {
+                display: block; 
+                padding: 18px;
+                color: #7a163c;
+                text-decoration: none;
+              }
+              &:hover {
+                background: #f0a2cf;
+              }
+          }
+      }
+  }
+
+.logo {
+    width: 300px;
+  }
+
+.img-nosotros {
+    width: 550px;
+    height: 400px;
+  }
+
+.img-icono {
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+  }
+
+  main {
+    color: gainsboro;
+    margin: 0 auto;
+    max-width: 1001px;
+    min-height: 300vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px 1fr;
+    grid-template-rows: 150px
+      100px
+      750px
+      100px
+      100px
+      200px;
+    grid-template-areas:
+    "my-header my-header my-header my-header"
+    "my-nav my-nav my-nav my-nav"
+    "my-construccion my-construccion my-construccion my-construccion"
+    "my-menu my-menu my-menu my-menu"
+    "my-footer my-footer my-footer my-footer"
+      
+  }
+  
+  @media (min-width: 300px) and (max-width: 1000px) {
+      main {
+        grid-template-columns: 200px 1fr 200px 1fr;
+        grid-template-rows: 150px
+        250px
+        850px
+        100px
+        100px
+        200px;
+        grid-template-areas:
+          "my-header my-header my-header my-header"
+          "my-nav my-nav my-nav my-nav"
+          "my-construccion my-construccion my-construccion my-construccion"
+          "my-menu my-menu my-menu my-menu"
+          "my-footer my-footer my-footer my-footer"
+      }
+    }
+  @media (min-width: 1001px) {
+      main {
+        grid-template-columns: 200px 1fr 200px 1fr 1fr;
+        grid-template-rows: 150px
+        850px
+        100px
+        100px
+        200px;
+        grid-template-areas:
+        "my-header my-header my-nav my-nav my-nav"
+        "my-construccion my-construccion my-construccion my-construccion my-construccion"
+        "my-menu my-menu my-menu my-menu my-menu"
+        "my-footer my-footer my-footer my-footer my-footer"
+      }
+    }
+
+.container {
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+    font-size: 5rem;
+    div {
+        background-color: rebeccapurple;
+        color: white;
+        padding: 1rem;
+      }
+  }
+  
+ul {
+    list-style: none;
+  }
+  
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+
+  }
+h2 {
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+h4 {
+    font-size: 24px;
+  }
+
+.logo {
+    width: 300px;
+  }
+
+
+
+  
+section.estilo-seccion {
+    padding: 64px 50px;
+    text-align: center;
+  }
+
+  section#construccion {
+    grid-area: my-construccion;
+    background-color: white;
+    float:center;
+    h2 {
+        color: white;
+      }
+      h3 {
+        font-size: 30px;
+        text-align: center;
+        color: #4328bb;
+      }
+      h4 {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 24px;
+      }
+      p {
+        font-size: 15px;
+        text-align: center;
+        color: #bb285c;
+      }
+      article {
+        margin-bottom: 25px;
+      }
+ }
+
+footer {
+    grid-area: my-footer;
+    background-color: #f2c9fb;
+    color: #00a4d3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 15px;
+  }
+  
+section#menu {
+    grid-area: my-menu;
+    background-color: #f2c9fb;
+    float:center;
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style: none;
+        overflow: hidden; 
+        float: center;
+        li {
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;;
+            font-size: 18px;
+            &:hover {
+                background: #f0a2cf;
+              }
+            a {
+                display: block; 
+                padding: 18px;
+                color: #00a4d3;
+                text-decoration: none;
+              }
+          }
+      }
+ }
