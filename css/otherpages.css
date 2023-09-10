@@ -51,7 +51,7 @@ nav ul li:hover {
 main {
   color: gainsboro;
   margin: 0 auto;
-  max-width: 1001px;
+  max-width: 3001px;
   min-height: 10vh;
   display: grid;
   grid-template-columns: 200px 1fr 200px 1fr;

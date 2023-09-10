@@ -61,7 +61,7 @@ nav ul li:hover {
 main {
   color: gainsboro;
   margin: 0 auto;
-  max-width: 1001px;
+  max-width: 3001px;
   min-height: 300vh;
   display: grid;
   grid-template-columns: 200px 1fr 200px 1fr;
@@ -87,10 +87,11 @@ main {
   display: grid;
   padding: 1rem;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, 150px);
   font-size: 5rem;
 }
+
+
+
 .container div {
   background-color: rebeccapurple;
   color: white;
